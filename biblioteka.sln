@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zbiorksiazek", "zbiorksiazek\zbiorksiazek.csproj", "{00BF573B-C739-42E9-9809-805B230B96EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bibliotekaApi", "bibliotekaApi\bibliotekaApi.csproj", "{E4C8859C-CB4D-4815-B3B7-40B076F46FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00BF573B-C739-42E9-9809-805B230B96EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BF573B-C739-42E9-9809-805B230B96EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BF573B-C739-42E9-9809-805B230B96EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BF573B-C739-42E9-9809-805B230B96EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C8859C-CB4D-4815-B3B7-40B076F46FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C8859C-CB4D-4815-B3B7-40B076F46FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C8859C-CB4D-4815-B3B7-40B076F46FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C8859C-CB4D-4815-B3B7-40B076F46FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

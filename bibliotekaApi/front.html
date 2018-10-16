@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            var lista = $("#listaKsiazek");
+            $("#btn1").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "api/ksiazki",
+                    dataType: "json",
+                    success: function (dane) {
+                        lista.empty();
+                        $.each(dane, function (index, wartosc) {
+                            var info = wartosc.autor + ': ' + wartosc.tytul;
+                            lista.append("<li>" + info + "</li>");
+                        });
+                    }
+                })
+            });
+            $("#btn2").click(function () {
+                lista.empty();
+            });
+            $("#btn3").click(function () {
+                var numer = prompt("Podaj numer książki");
+                var adres = "api/ksiazki/" + numer;
+                $.ajax({
+                    type: "GET",
+                    url: adres,
+                    dataType: "json",
+                    success: function (dane) {
+                        lista.empty();
+                        var info = dane.autor + ': ' + dane.tytul;
+                        lista.append("<li>" + info + "</li>");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" id="btn1" value="Pokaż wszystkie książki" />
+        <input type="button" id="btn2" value="Wyczyść" />
+        <input type="button" id="btn3" value="Wybierz określoną książkę" />
+        <ul id="listaKsiazek">
+            
+        </ul>
+    </div>
+</body>
+</html>
